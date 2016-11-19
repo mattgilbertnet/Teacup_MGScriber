@@ -471,25 +471,6 @@ void process_gcode_command() {
 				next_target.option_e_relative = 1;
 				break;
 
-			// M3/M101- extruder on
-			case 3:
-      case 101:
-        //? --- M101: dremel on ---
-        //?
-        //? Undocumented.
-        //digitalWrite(16, 1);
-        dremel_on();
-        break;
-
-			// M5/M103- extruder off
-			case 5:
-      case 103:
-        //? --- M103: extruder off ---
-        //?
-        //? Undocumented.        
-        //digitalWrite(16, 0);
-        dremel_off();
-        break;
 
 			case 104:
 				//? --- M104: Set Extruder Temperature (Fast) ---
